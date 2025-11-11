@@ -1,0 +1,3 @@
+Source File,Dest File,Processor Type,Content Type,Source File Size,Dest File Size,Build Seconds
+"C:/Users/ezrat/source/repos/ReinforcementJump/Content/Fonts/Montserrat.spritefont","C:/Users/ezrat/source/repos/ReinforcementJump/Content/bin/DesktopGL/Fonts/Montserrat.xnb","FontDescriptionProcessor","SpriteFontContent",2073,21529,0.2062405
+"C:/Users/ezrat/source/repos/ReinforcementJump/Content/OIP.jfif","C:/Users/ezrat/source/repos/ReinforcementJump/Content/bin/DesktopGL/OIP.xnb","TextureProcessor","Texture2DContent",6977,195925,0.1291944
