@@ -54,7 +54,7 @@ namespace ReinforcementJump
                 for (int NodeIn = 0; NodeIn < NumberOfNodesIn; NodeIn++)
                 {
                   //  weights[NodeIn, NodeOut] -= costGradientW[NodeIn, NodeOut] * LearnRate * Gamma;
-                  //  Debug.WriteLine("WeightValue: "  + Gamma);
+                    Debug.WriteLine("WeightValue: "  + costGradientW[NodeIn, NodeOut]);
                     //Currently costgradientW is 0 for some reason
                     //Learn Rate is somehow infinity
                     //Gamma is just 1

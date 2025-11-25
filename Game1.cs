@@ -7,6 +7,7 @@ using System.Collections.Generic;
 using System.Diagnostics;
 using System.IO;
 using System.Linq;
+using System.Reflection.Emit;
 using System.Reflection.Metadata;
 using System.Security.Cryptography.X509Certificates;
 using System.Threading;
@@ -99,27 +100,7 @@ public class Game1 : Game
             SpriteList.Add(new Obstacle(texture, new Vector2(350 * i, 1000), (0.4f), Traits, 1, 1, "Yes", this));
         }
 
-        //test please delete
-        double[] OutputsRecieved = new double[] { 1, 2, 3 };
-        Random RandomNumber = new();
-        double RandomValue = RandomNumber.NextDouble();
-        double[] AccumulatedOutputs = new double[OutputsRecieved.Length];
-        double OutputsSum = OutputsRecieved.Sum();
-        for (int i = 0; i < OutputsRecieved.Length; i++)
-        {
-            OutputsRecieved[i] = OutputsRecieved[i] / OutputsSum;
-            for (int a = 0; a < i + 1; a++)
-            {
-                AccumulatedOutputs[i] += OutputsRecieved[a];
-            }
-        }
-        string man = "";
-        for (int i = 0; i < OutputsRecieved.Length; i++)
-        {
-           man += OutputsRecieved[i] + "       ";
-
-        }
-        Debug.WriteLine(man);
+      //  Debug.WriteLine(man);
 
         Thread.Sleep(x * 100); // Sleep for 1 second
         Thread NewThread = new Thread(GameRun);
@@ -533,7 +514,8 @@ public class Game1 : Game
                 for (int k = 0; i < layer.weights.GetLength(1); i++)
                 {
                     AverageWeight += layer.weights[j, k];
-                   // Debug.WriteLine(layer.weights[j, k]);
+                    Dividend++;
+                    Debug.WriteLine(layer.weights[j, k]);
                 }
             }
         }

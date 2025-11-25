@@ -44,7 +44,7 @@ namespace ReinforcementJump
                     (float)Math.Round(ChangedPositionX),
                     (float)Math.Round(ChangedPositionY)
                     );
-                Debug.WriteLine(DataBatchToSearch.Count + " " + ActionsSinceLastReward);
+             //   Debug.WriteLine(DataBatchToSearch.Count + " " + ActionsSinceLastReward);
                 DataPoint[] BatchToAnalyse = new DataPoint[ActionsSinceLastReward];
                 List<DataPoint> SpecificRange = DataBatchToSearch.GetRange(DataBatchToSearch.Count - ActionsSinceLastReward, ActionsSinceLastReward);
                 BatchToAnalyse = [.. SpecificRange];
