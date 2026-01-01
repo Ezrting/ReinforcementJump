@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("ReinforcementJump")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+cda4c0de8bb6aebadb2a999bf6577f91ce19b971")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+579439aac1ad568f1ea0286442d661f83630f0f3")]
 [assembly: System.Reflection.AssemblyProductAttribute("ReinforcementJump")]
 [assembly: System.Reflection.AssemblyTitleAttribute("ReinforcementJump")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
